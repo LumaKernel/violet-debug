@@ -9,6 +9,7 @@ import type { ChangeEvent, FormEvent } from 'react'
 import { Fragment, useCallback, useState } from 'react'
 import styled from 'styled-components'
 import { UserBanner } from './components/UserBanner'
+import * as faker from 'faker'
 
 const Container = styled.div`
   display: flex;
@@ -86,6 +87,10 @@ const Home = () => {
   const { data: tasks, error, mutate } = useAspidaSWR(api.tasks)
   const [label, setLabel] = useState('')
   const inputLabel = useCallback((e: ChangeEvent<HTMLInputElement>) => setLabel(e.target.value), [])
+
+  if (typeof window !== 'undefined') {
+    (window as any).faker = faker;
+  }
 
   const createTask = useCallback(
     async (e: FormEvent) => {

@@ -234,12 +234,14 @@ importers:
     specifiers:
       '@aspida/fetch': ^1.7.1
       '@aspida/swr': ^1.7.1
+      '@types/faker': ^5.5.9
       '@violet/api': workspace:*
       '@violet/def': workspace:*
       '@violet/lib': workspace:*
       '@violet/web': workspace:*
       class-validator: ^0.13.1
       dayjs: ^1.10.7
+      faker: ^5.5.3
       firebase: ^9.4.1
       next: ^11.1.0
       next-transpile-modules: ^9.0.0
@@ -256,6 +258,7 @@ importers:
       '@violet/lib': link:../lib
       class-validator: 0.13.1
       dayjs: 1.10.7
+      faker: 5.5.3
       firebase: 9.4.1
       next: 11.1.2_8e3522129ef2816b3c737f17aecb3a9d
       next-transpile-modules: 9.0.0
@@ -265,6 +268,7 @@ importers:
       styled-components: 5.3.3_react-dom@17.0.2+react@17.0.2
       swr: 1.0.1_react@17.0.2
     devDependencies:
+      '@types/faker': 5.5.9
       '@violet/web': 'link:'
 
 packages:
@@ -3057,6 +3061,10 @@ packages:
       '@types/qs': 6.9.7
       '@types/serve-static': 1.13.10
 
+  /@types/faker/5.5.9:
+    resolution: {integrity: sha512-uCx6mP3UY5SIO14XlspxsGjgaemrxpssJI0Ol+GfhxtcKpv9pgRZYsS4eeKeHVLje6Qtc8lGszuBI461+gVZBA==}
+    dev: true
+
   /@types/graceful-fs/4.1.5:
     resolution: {integrity: sha512-anKkLmZZ+xm4p8JWBf4hElkM4XR+EZeA2M9BAkkTldmcyDY4mbdIJnRghDJH3Ov5ooY7/UAoENtmdMSkaAd7Cw==}
     dependencies:
@@ -5235,6 +5243,10 @@ packages:
 
   /extend/3.0.2:
     resolution: {integrity: sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==}
+
+  /faker/5.5.3:
+    resolution: {integrity: sha512-wLTv2a28wjUyWkbnX7u/ABZBkUkIF2fCd73V6P2oFqEGEktDfzWx4UxrSqtPRw0xPRAcjeAOIiJWqZm3pP4u3g==}
+    dev: false
 
   /fast-decode-uri-component/1.0.1:
     resolution: {integrity: sha512-WKgKWg5eUxvRZGwW8FvfbaH7AXSh2cL+3j5fMGzUMCxWBJ3dV3a7Wz8y2f/uQ0e3B6WmodD3oS54jTQ9HVTIIg==}

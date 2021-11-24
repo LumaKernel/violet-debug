@@ -20,6 +20,7 @@
     "@violet/lib": "workspace:*",
     "class-validator": "^0.13.1",
     "dayjs": "^1.10.7",
+    "faker": "^5.5.3",
     "firebase": "^9.4.1",
     "next": "^11.1.0",
     "next-transpile-modules": "^9.0.0",
@@ -30,6 +31,7 @@
     "swr": "^1.0.0"
   },
   "devDependencies": {
+    "@types/faker": "^5.5.9",
     "@violet/web": "workspace:*"
   }
 }
