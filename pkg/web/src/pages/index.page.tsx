@@ -4,12 +4,12 @@ import { Spacer } from '@violet/web/src/components/atoms/Spacer'
 import { Fetching } from '@violet/web/src/components/organisms/Fetching'
 import { useApi } from '@violet/web/src/hooks'
 import { staticPath } from '@violet/web/src/utils/$path'
+import * as faker from 'faker'
 import Head from 'next/head'
 import type { ChangeEvent, FormEvent } from 'react'
 import { Fragment, useCallback, useState } from 'react'
 import styled from 'styled-components'
 import { UserBanner } from './components/UserBanner'
-import * as faker from 'faker'
 
 const Container = styled.div`
   display: flex;
@@ -89,7 +89,7 @@ const Home = () => {
   const inputLabel = useCallback((e: ChangeEvent<HTMLInputElement>) => setLabel(e.target.value), [])
 
   if (typeof window !== 'undefined') {
-    (window as any).faker = faker;
+    ;(window as any).faker = faker
   }
 
   const createTask = useCallback(
