@@ -1,3 +1,5 @@
+DEBUG TOUCHING
+
 - [CONTRIBUTING (日本語)](./CONTRIBUTING-ja.md)
 
 ## Getting Started
